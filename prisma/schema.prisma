@@ -1,0 +1,35 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  email        String    @unique
+  passwordHash String
+  role         String    // "patient" | "admin"
+  bookings     Booking[]
+}
+
+model Slot {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  startAt   DateTime
+  endAt     DateTime
+  booking   Booking?
+  createdAt DateTime  @default(now())
+}
+
+model Booking {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String   @db.ObjectId
+  slotId    String   @unique @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id])
+  slot      Slot     @relation(fields: [slotId], references: [id])
+  createdAt DateTime @default(now())
+}
+
