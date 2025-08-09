@@ -49,4 +49,6 @@ cp .env.example .env
 ● API URL: https://wundrsight-backend-vmp9.onrender.com
 ● Patient: patient@example.com / Passw0rd!
 ● Admin: admin@example.com / Passw0rd!
-● Repo URL: 
+● Repo URL: https://github.com/Ojhanaveen/Wundrsight
+● Run locally: README steps verified
+● Postman/curl steps included
