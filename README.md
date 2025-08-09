@@ -40,3 +40,15 @@ npm install
 
 # Create .env file
 cp .env.example .env
+
+---
+
+## Submission Checklist
+---
+● Frontend URL: https://wundersight.vercel.app/login
+● API URL: https://wundrsight-backend-vmp9.onrender.com
+● Patient: patient@example.com / Passw0rd!
+● Admin: admin@example.com / Passw0rd!
+● Repo URL: https://github.com/Ojhanaveen/Wundrsight
+● Run locally: README steps verified
+● Postman/curl steps included
