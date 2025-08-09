@@ -45,7 +45,7 @@ cp .env.example .env
 
 ## Submission Checklist
 ---
-● Frontend URL: https://wundersight.vercel.app/login
+● Frontend URL: [https://wundersight.vercel.app/login](https://wundersight-koqsbccjc-ojhanaveens-projects.vercel.app/login)
 ● API URL: https://wundrsight-backend-vmp9.onrender.com
 ● Patient: patient@example.com / Passw0rd!
 ● Admin: admin@example.com / Passw0rd!
